@@ -2,7 +2,7 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 class Employee:
-    def __init__(self, name, salary=0, hours=0, hourly_rate=0, contracts=0, rate=0, bonus=0):
+    def __init__(self, name, salary, hours, hourly_rate, contracts, rate, bonu):
         self.name = name
         self.salary = salary
         self.hours = hours
