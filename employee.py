@@ -2,14 +2,14 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 class Employee:
-    def __init__(self, name, salary=0, hours=0, hourly_rate=0, contracts=0, rate=0, bonus=0):
+    def __init__(self, name, **kwargs):
         self.name = name
-        self.salary = salary
-        self.hours = hours
-        self.hourly_rate = hourly_rate
-        self.contracts = contracts
-        self.rate = rate
-        self.bonus = bonus
+        self.salary = kwargs.get('salary', 0)
+        self.hours = kwargs.get('hours', 0)
+        self.hourly_rate = kwargs.get('hourly_rate', 0)
+        self.contracts = kwargs.get('contracts', 0)
+        self.rate = kwargs.get('rate', 0)
+        self.bonus = kwargs.get('bonus', 0)
         self.pay_description = ""
 
     def get_pay(self):
